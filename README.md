@@ -32,8 +32,7 @@
 * Can you describe the difference between progressive enhancement and graceful degradation?
 	* *Progressive enhancement is starting from a baseline and then building enhancements for new browser tech on top.*
 	* *Graceful degradation is starting with designing for the most optimal browser experience first and then designing fallbacks for older browsers.*
-	* Bonus points for describing feature detection  
-		* *Some methods for doing this are media queries, javascript polyfills and javascript detection libraries such as Modernizr*
+	* *Some methods for doing this are media queries, javascript polyfills and javascript detection libraries such as Modernizr*
 
 * Explain what "Semantic HTML" means. 
 	* *It means the opposite of using divs for everything. Taking advantage of new HTML5 elements like nav, article, header, footer, etc.*
@@ -42,8 +41,10 @@
 	* *Chrome*
 
 * How would you optimize a websites assets/resources?
-	* *Concatenate JavaScript and CSS Files*
+	* *Use photoshop to compress image files, choosing the best format for the best compression, then use ysmush.it to get even more lossless compression.*
+	* *Concatenate and minify JavaScript and CSS Files*
 	* *Use sprite sheets and icon fonts*
+	* *Use cdn for jquery and hosting video*
 	
 	* File concatenation
 	* File minification
