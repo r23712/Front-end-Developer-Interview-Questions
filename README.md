@@ -12,27 +12,35 @@
 	* Yes
 	* If so, who do you follow on Twitter?
 		* *Mostly web developers and designers.*
+
 * Are you on GitHub? 
 	* If so, what are some examples of repos you follow 
  		* *HTML5 Boilerplate*
+
 * What blogs do you follow? 
 	* *Lots. HTML5Weekly, JavaScript Weekly, CSS Tricks/Shoptalk, Javascript Jabber, The Web Ahead*
+
 * What version control systems have you used (Git, SVN etc.)? 
 	* *Git and SVN*
+
 * What is your preferred development environment? (OS, Editor, Browsers, Tools etc.) 
 	* *Mac, Sublime 2, Chrome Dev Tools, Firebug, Photoshop, Lots of online resources*
+
 * Can you describe your workflow when you create a web page? 
-	* *Usually start with my HTML5 Boilerplate fork, then markup, then styling, then JavaScript.*
-	* *I try to do anything I think that may be more challenging early on.*
+	* *Usually start with my HTML5 Boilerplate fork, then markup, then styling, then JavaScript. I try to do anything I think that may be more challenging early on.*
+
 * Can you describe the difference between progressive enhancement and graceful degradation?
 	* *Progressive enhancement is starting from a baseline and then building enhancements for new browser tech on top.*
-		* *Graceful degradation is starting with designing for the most optimal browser experience first and then designing fallbacks for older browsers.*
+	* *Graceful degradation is starting with designing for the most optimal browser experience first and then designing fallbacks for older browsers.*
 	* Bonus points for describing feature detection  
 		* *Some methods for doing this are media queries, javascript polyfills and javascript detection libraries such as Modernizr*
+
 * Explain what "Semantic HTML" means. 
 	* *It means the opposite of using divs for everything. Taking advantage of new HTML5 elements like nav, article, header, footer, etc.*
+
 * What browser do you primary develop in and what developer tools do you use?
 	* *Chrome*
+
 * How would you optimize a websites assets/resources?
 	* *Concatenate JavaScript and CSS Files*
 	* *Use sprite sheets and icon fonts*
@@ -42,6 +50,7 @@
 	* CDN Hosted
 	* Caching
 	* etc.
+
 * Why is it better to serve site assets from multiple domains? 
 	* How many resources will a browser download from a given domain at a time? 
 * Name 3 ways to decrease page load. (perceived or actual load time) 
