@@ -54,7 +54,7 @@
 	* *Depends on the browser. The recommendation is to stick to 2-4 hostnames (http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/)*
 
 * Name 3 ways to decrease page load. (perceived or actual load time) 
-	* *The best way is usually to reduce your image sizes. Minify and concatenate JS/CSS. Have JS at the bottom of the page. Use a CDN.
+	* *The best way is usually to reduce your image sizes. Minify and concatenate JS/CSS. Have JS at the bottom of the page. Use a CDN.*
 
 * If you jumped on a project and they used tabs and you used spaces, what would you do? 
 	* *Conform to the conventions (stay consistant)*
