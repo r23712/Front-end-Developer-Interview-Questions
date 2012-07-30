@@ -63,24 +63,45 @@
 	* Already did. (http://johnpolacek.github.com/scrolldeck.js/)
 
 * What tools do you use to test your code's performance?
-	* JSPerf (http://jsperf.com/)
+	* *Yahoo! YSlow (http://developer.yahoo.com/yslow/)*
+ 	* *Google PageSpeed (https://developers.google.com/speed/pagespeed/)*
+  	* *Pingdom Tools (http://tools.pingdom.com/fpt/)*
+   	* JSPerf (http://jsperf.com/)
 	* Dromaeo (http://dromaeo.com/) 
-	* *Yahoo! YSlow (http://developer.yahoo.com/yslow/), Google PageSpeed (https://developers.google.com/speed/pagespeed/), Pingdom Tools (http://tools.pingdom.com/fpt/)*
 
 * If you could master one technology this year, what would it be? 
+	* *I put more importance on building cool things over any specific type of tech. People seem to be doing great stuff with Node.js + Arduino lately*
+
 * Explain the importance of standards and standards bodies.  
+	* *Standards are the only thing holding this crazy chaotic thing we call the web together. They make it possible for us to code up web stuff that works cross-browser/platform/device/screen*
 
 ## HTML-Specific Questions:
 
 * What's a `doctype` do, and how many can you name? 
+	* *Let's just do html and call it a day. This ain't 2007.*
+
 * What's the difference between standards mode and quirks mode? 
+	* *Quirks mode is for old (really old!) browsers. It essentially gives them permission to continue to follow their own busted way of rendering a web page as opposed to standards mode where all the browsers have come to an agreement about how to handle styling and markup. This question feels dated.*
+
 * What are the limitations when serving XHTML pages? 
 	* Are there any problems with serving pages as `application/xhtml+xml`?  
+	* *Yes. Here's a nice article on this stuff (http://www.webdevout.net/articles/beware-of-xhtml/) These questions are giving me a headache. Let's just do html5. *
+
 * How do you serve a page with content in multiple languages? 
-	* What kind of things must you be wary of when design or developing for multilingual sites?
+	* *You would generally use a CMS for this, which would be wired up with different content for each language, but still output the same structure and styling.*
+
+* What kind of things must you be wary of when design or developing for multilingual sites?
+	* *Spacing is a biggie. You want to make sure you have a fluid design that can accommodate different sized type. This can be particularly noticeable in navigation buttons that might overlap content or break in the middle of a word.*
+
 * Can you use XHTML syntax in HTML5? 
+	* *Yes. (http://adactio.com/journal/1595/)*
+
 * How do you use XML in HTML5? 
+	* *I like the idea of HTML as a flavor of XML (XHTML) - i.e. quoted attr's and trailing slashes on br's, img's, etc.*
+
 * What are `data-` attributes good for? 
+	* *Storing data in the DOM. I love it.*
+
 * What are the content models in HTML4 and are they different in HTML5? 
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5? 
 * Describe the difference between cookies, sessionStorage and localStorage. 
