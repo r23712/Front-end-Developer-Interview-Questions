@@ -85,7 +85,7 @@
 
 * What are the limitations when serving XHTML pages? 
 	* Are there any problems with serving pages as `application/xhtml+xml`?  
-	* *Yes. Here's a nice article on this stuff (http://www.webdevout.net/articles/beware-of-xhtml/) These questions are giving me a headache. Let's just do html5. *
+	* *Yes. Here's a nice article on this stuff (http://www.webdevout.net/articles/beware-of-xhtml/) These questions are giving me a headache. Let's just do html5.*
 
 * How do you serve a page with content in multiple languages? 
 	* *You would generally use a CMS for this, which would be wired up with different content for each language, but still output the same structure and styling.*
