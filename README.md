@@ -44,27 +44,29 @@
 	* *Use photoshop to compress image files, choosing the best format for the best compression, then use ysmush.it to get even more lossless compression.*
 	* *Concatenate and minify JavaScript and CSS Files*
 	* *Use sprite sheets and icon fonts*
-	* *Use cdn for jquery and hosting video*
-	
-	* File concatenation
-	* File minification
-	* CDN Hosted
-	* Caching
-	* etc.
+	* *Use cdn for jquery and hosting video*		
+	* *Cache static files (in the past this would be typically done with a php header, but now you could use a HTML5 Cache Manifest)*
 
 * Why is it better to serve site assets from multiple domains? 
-	* How many resources will a browser download from a given domain at a time? 
+	* *Parallel downloads speed up the page load. Also, serving static files from a CDN (S3 for example) takes some load off your server.*
+
+* How many resources will a browser download from a given domain at a time?  
+	* *Depends on the browser. The recommendation is to stick to 2-4 hostnames(http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/)*
+
 * Name 3 ways to decrease page load. (perceived or actual load time) 
+	* *The best way is usually to reduce your image sizes. Minify and concatenate JS/CSS. Have JS at the bottom of the page. Use a CDN.
+
 * If you jumped on a project and they used tabs and you used spaces, what would you do? 
-	* Suggest the project utilize something like EditorConfig (http://editorconfig.org)
-	* Conform to the conventions (stay consistant)
-	* `issue :retab! command`
+	* *Conform to the conventions (stay consistant)*
+
 * Write a simple slideshow page 
-	* Bonus points if it does not use JS.  
+	* Already did. 
+
 * What tools do you use to test your code's performance?
 	* JSPerf (http://jsperf.com/)
 	* Dromaeo (http://dromaeo.com/) 
-	* etc.
+	* *Yahoo! YSlow (http://developer.yahoo.com/yslow/), Google PageSpeed (https://developers.google.com/speed/pagespeed/), Pingdom Tools (http://tools.pingdom.com/fpt/)*
+
 * If you could master one technology this year, what would it be? 
 * Explain the importance of standards and standards bodies.  
 
