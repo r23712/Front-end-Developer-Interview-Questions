@@ -51,7 +51,7 @@
 	* *Parallel downloads speed up the page load. Also, serving static files from a CDN (S3 for example) takes some load off your server.*
 
 * How many resources will a browser download from a given domain at a time?  
-	* *Depends on the browser. The recommendation is to stick to 2-4 hostnames(http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/)*
+	* *Depends on the browser. The recommendation is to stick to 2-4 hostnames (http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/)*
 
 * Name 3 ways to decrease page load. (perceived or actual load time) 
 	* *The best way is usually to reduce your image sizes. Minify and concatenate JS/CSS. Have JS at the bottom of the page. Use a CDN.
@@ -60,7 +60,7 @@
 	* *Conform to the conventions (stay consistant)*
 
 * Write a simple slideshow page 
-	* Already did. 
+	* Already did. (http://johnpolacek.github.com/scrolldeck.js/)
 
 * What tools do you use to test your code's performance?
 	* JSPerf (http://jsperf.com/)
