@@ -27,11 +27,11 @@
 	* *Mac, Sublime 2, Chrome Dev Tools, Firebug, Photoshop, Lots of online resources*
 
 * Can you describe your workflow when you create a web page? 
-	* *Usually start with my HTML5 Boilerplate fork, then markup, then styling, then JavaScript. I try to do anything I think that may be more challenging early on.*
+	* *Usually start with my HTML5 Boilerplate fork, then markup, then styling, then JavaScript. I try to tackle the most challenging stuff first.*
 
 * Can you describe the difference between progressive enhancement and graceful degradation?
 	* *Progressive enhancement is starting from a baseline and then building enhancements for new browser tech on top.*
-	* *Graceful degradation is starting with designing for the most optimal browser experience first and then designing fallbacks for older browsers.*
+	* *Graceful degradation is starting with designing the most optimal browser experience, then designing fallbacks for older browsers.*
 	* *Some methods for doing this are media queries, javascript polyfills and javascript detection libraries such as Modernizr*
 
 * Explain what "Semantic HTML" means. 
