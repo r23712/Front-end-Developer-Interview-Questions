@@ -103,8 +103,13 @@
 	* *Storing data in the DOM. I love it.*
 
 * What are the content models in HTML4 and are they different in HTML5? 
+	* *In HTML4, there are 2 types of elements: Block and Inline. HTML5 emphasizes semantics and structure, so it has organized its elements into the categories of metadata, flow, sectioning, heading, phrasing, interactive & embedded*
+
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5? 
+	* *HTML, CSS and JavaScript*
+
 * Describe the difference between cookies, sessionStorage and localStorage. 
+	* *Cookies are for storing small amounts of website data, such as a user name. HTML5 Web Storage is a faster, improved means of storing website data. sessionsStorage is for temporary data, and localStorage is for persistant data.*
 
 ## JS-Specific Questions
 
