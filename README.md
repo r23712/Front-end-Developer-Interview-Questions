@@ -114,23 +114,44 @@
 ## JS-Specific Questions
 
 * Which JavaScript libraries have you used? 
-* Have you ever looked at the source code aof the libraries/frameworks you use?
+	* *jQuery of course. Other ones I've used are jQuery UI, jQuery Mobile, Modernizr, Greensock and then lots of little utility ones*
+
+* Have you ever looked at the source code of the libraries/frameworks you use?
+	* *Yeah. Plenty of good stuff to learn in there. Such as https://vimeo.com/12529436 and https://vimeo.com/18901514*
+
 * How is JavaScript different from Java? 
+	* *They are very different. From what I've heard, the only reason they share the name is for marketing purposes. Java is a programming language that gets compiled then run as a standalone 'applet' in a VM or browser. Whereas JavaScript is a scripting language designed to be run only through a browser. They are both OOP, but Java is strictly typed while JS is loose.*
+
 * What's a hashtable?
+	* *A hashtable is an associative array of key/value pairs. JavaScript Objects are hashtables.*
+
 * What are `undefined` and `undeclared` variables? 
+	* *undeclared vars have not been declared by a var statement (considered null). undefined vars have been declared but have no value.*
+
 * What is a closure, and how/why would you use one? 
-	* Your favorite pattern used to create them? argyle (Only applicable to IIFEs)  
+	* *Closures provide a means of putting function definitions and expressions inside of other functions. A common use would be binding event handler functions so that 'this' refers to the event object. The Module Pattern is the classic example.*
+
 * What's a typical use case for anonymous functions? 
+	* *For single use methods, like when you need to pass a one-liner of code to another function. Or when you want to scope vars via a closure.*
+
 * Explain the "JavaScript module pattern" and when you'd use it. 
-	* Bonus points for mentioning clean namespacing. 
-	* What if your modules are namespace-less?  
-* How do you organize your code? (module pattern, classical inheritance?) 
+	* *The module pattern is a way of organizing and encapsulating code via a closure. It allows you to create public/private functions and vars inside an object (the module). It lessens the likelihood of naming conflicts and unintended interactions with other functions/vars on the page. Modules should work independently and be easily extensible. Using modules enables to write widgets and plugins that interact with each other.*
+
+* How do you organize your code?
+	* *I like using the Module Pattern quite a bit. Whenever possible, I like to widgetize/pluginize my code.*
+
 * What's the difference between host objects and native objects? 
+	* *Native Objects are objects/methods that exist in the ECMAScript spec (Date, Math, String methods, etc.) Host Objects are created by the environment (window, history, getElementByID, etc.) or ones you create yourself.*
+
 * Difference between: 
 ```javascript
 function Person(){} var person = Person() var person = new Person()
 ```
+	* *The first is undefined. The second is an object.*
+
 * What's the difference between `.call` and `.apply`? 
+	* *apply and call do the same thing, but apply() uses an array containing arguments for the target method as the second parameter.*
+
 * explain `Function.prototype.bind`? 
 * When do you optimize your code? 
 * Can you explain how inheritance works in JavaScript?   
@@ -262,4 +283,3 @@ $(".foo div#bar:eq(0)")
 * What's your favorite feature of Internet Explorer?
 * Complete this sentence: Brendan Eich and Doug Crockford are the __________ of javascript.
 * jQuery: a great library or the greatest library? Discuss.
-
