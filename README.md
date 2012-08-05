@@ -78,7 +78,7 @@
 ## HTML-Specific Questions:
 
 * What's a `doctype` do, and how many can you name? 
-	* *Let's just do html and call it a day. This ain't 2007.*
+	* *Defines the version of html the document is using. Let's just do html and call it a day. This ain't 2007.*
 
 * What's the difference between standards mode and quirks mode? 
 	* *Quirks mode is for old (really old!) browsers. It essentially gives them permission to continue to follow their own busted way of rendering a web page as opposed to standards mode where all the browsers have come to an agreement about how to handle styling and markup. This question feels dated.*
@@ -153,17 +153,34 @@ function Person(){} var person = Person() var person = new Person()
 	* *apply and call do the same thing, but apply() uses an array containing arguments for the target method as the second parameter.*
 
 * explain `Function.prototype.bind`? 
+	* *Use this to create functions that when called have a particular value for _this_ and therefore binding it to the original value of the target object*
+
 * When do you optimize your code? 
+	* *All the time, from the beginning structure, to refactoring along the way, to re-evaluating at the end.*
+
 * Can you explain how inheritance works in JavaScript?   
+	* *JavaScript does not have classes - it uses prototypal inheritance. There continues to be debate over what specific inheritance pattern works best (http://stackoverflow.com/questions/6418674/improvement-over-john-resigs-javascript-class-framework). I like John Resig’s approach - http://ejohn.org/blog/simple-javascript-inheritance/ - as implemented in $.Class by JavaScriptMVC - http://javascriptmvc.com/docs.html#!jQuery.Class - simply because it just makes the most sense to me.*
+
 * When would you use `document.write()`?
-	* Most generated ads still utilize `document.write()` although its use is frowned upon
+	* *It is bad practice to use `document.write()`. Instead, use DOM manipulation methods like `innerHTML`. The one case where it is acceptable from what I understand is where you would want to add link to a stylesheet if JavaScript is enabled.*
+
 * What's the difference between feature detection, feature inference, and using the UA string 
-* Explain AJAX in as much detail as possible 
+	* *Using feature detection over user agent detection is favored because devices and device features are constantly changing and therefore it is better to design behavior based on whether particular features are present or not. For example, by using Modernizr or yepnope.*
+
+* Explain AJAX
+	* *AJAX is used for asynchonously sending and receiving data without interfering with any processes occuring on the page. It is used for things like form submission, loading dynamic content assets and user interaction like chat rooms and multiplayer games. When data is returned from a server, a callback function is then executed that handles the data. AJAX stands for Asynchronous JavaScript and XML, which has become a bit outdated as most are using JSON these days. But, AJAJ just doesn’t have as nice a ring to it though.*
+
 * Explain how JSONP works (and how it's not really AJAX) 
-* Have you ever used JavaScript templating?
-	* If so, what libraries have you used? (Mustache.js, Handlebars etc.) 
+	* *JSONP stands for JSON with padding. The padding is a callback function that is used to wrap the data returned from the server. The reason for its existence is to get around browser's same-origin restriction against cross domain requests.*
+
+* Have you ever used JavaScript templating? If so, what libraries have you used? (Mustache.js, Handlebars etc.)
+	* *I've used jQuery Templates and more recently Mustache. Recently though, my favorite has been to use ICanHaz.js with Mustache. http://icanhazjs.com*
 * Explain "hoisting".
+	* *Hoisting is a feature in JavaScript where var declarations are moved to the top of the function body. However, the initialization/assignment of the var is not. Therefore it is considered best practice to define and assign all var declarations at the top of a function.*
+
 * What is FOUC? How do you avoid FOUC?
+	* *FOUC = Flash Of Unstyled Content. The standard way is to do a .no-js hook on the document body that gets changed to .js by some script in the document head.*
+	
 * Describe event bubbling. 
 * What's the difference between an "attribute" and a "property"? 
 * Why is extending built in JavaScript objects not a good idea? 
