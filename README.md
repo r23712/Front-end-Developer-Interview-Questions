@@ -217,19 +217,24 @@ function Person(){} var person = Person() var person = new Person()
 [1,2,3,4,5].duplicator(); // [1,2,3,4,5,1,2,3,4,5]
 ```
 	* *Ok, but this is going to extend the built in JS Array Object, which we already said was a bad idea.*
+
 ```javascript
 Array.prototype.duplicator = function(){
     return this.concat(this);
 }
 ```
+
 	* *I'd prefer to do this:*
+
 ```javascript
 function duplicateArray(array) {
 	return array.concat(array);
 }
 var dup = duplicateArray([1,2,3,4,5])
 ```
+
 	* *Or this:*
+
 ```javascript
 function duplicateArray(array, numDups) {
     var dups = [];
