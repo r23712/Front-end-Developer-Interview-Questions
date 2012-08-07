@@ -175,26 +175,66 @@ function Person(){} var person = Person() var person = new Person()
 
 * Have you ever used JavaScript templating? If so, what libraries have you used? (Mustache.js, Handlebars etc.)
 	* *I've used jQuery Templates and more recently Mustache. Recently though, my favorite has been to use ICanHaz.js with Mustache. http://icanhazjs.com*
+
 * Explain "hoisting".
 	* *Hoisting is a feature in JavaScript where var declarations are moved to the top of the function body. However, the initialization/assignment of the var is not. Therefore it is considered best practice to define and assign all var declarations at the top of a function.*
 
 * What is FOUC? How do you avoid FOUC?
 	* *FOUC = Flash Of Unstyled Content. The standard way is to do a .no-js hook on the document body that gets changed to .js by some script in the document head.*
-	
+
 * Describe event bubbling. 
+	* *Events are dispatched first at the event target, then propagate up through the target element's parent and ancestors, 'bubbling' all the way up to the document root.*
+
 * What's the difference between an "attribute" and a "property"? 
+	* *An attribute carries information about an element in the form of a key value pair. A property is the key portion of that attribute.*
+
 * Why is extending built in JavaScript objects not a good idea? 
+	* *The main reason not to do it is to avoid conflicts - for example, if two different scripts are extending an object in an incompatible way. If every JS library out there started extending object prototypes, it would create a huge mess. It is best to leave the built-ins alone, as that way everyone knows their expected behavior and there are no surprises down the road.*
+
 * Why is extending built ins a good idea? 
+	* *The temptation is that by extending a native object, you can quickly bring useful functionality to JS prototypes, like Array or String. But that quick solution can lead to big headaches later on. Are there any good use cases? Some say a worthy use would be making polyfills for older browsers to bring them up to the latest EcmaScript standards, yet even that seems open to causing trouble. Best steer clear. There be dragons.*
+
 * Difference between document load event and document ready event? 
+	* *Document ready fires when the html load has completed and the DOM is 'ready'. The window load fires when images and other page content have all finished loading.*
+
 * What is the difference between `==` and `===`? 
+	* *`===` is strictly equal, while `==` allows for truthiness, where the objects being compared are equal after type coercion. For example, `1=="1"` is true, but `1==="1"` is false.*
+
 * Explain how you would get a query string parameter from the browser window's URL. 
+	* *I would look up how to do it on stackoverflow. http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript*
+
 * Explain the same-origin policy with regards to JavaScript. 
+	* *A script can read only the properties of windows and documents that are loaded from the same host, through the same port, and by the same protocol as the script itself. (source: O'Reilly JavaScript: The Definitive Guide)*
+
 * Explain event delegation. 
+	* *Event delegation is assigning event handlers further up the DOM tree to capture events as they bubble up from children. For example, adding a click event listener to a `<ul>` to capture any clicks upon its child `<li>` elements.*
+
 * Describe inheritance patterns in JavaScript. 
+	* *Didn't we do this one already?*
+
 * Make this work: 
 ```javascript
 [1,2,3,4,5].duplicator(); // [1,2,3,4,5,1,2,3,4,5]
 ```
+	* *Ok, but this is going to extend the built in JS Array Object, which we already said was a bad idea.*
+```Array.prototype.duplicator = function(){
+    return this.concat(this);
+}```
+	* *I'd prefer to do this:*
+```function duplicateArray(array) {
+	return array.concat(array);
+}
+var dup = duplicateArray([1,2,3,4,5])```
+	* *Or this:*
+```function duplicateArray(array, numDups) {
+    var dups = [];
+    for (var i=0; i<numDups+1; i++) {
+        dups = dups.concat(array);
+    }
+    return dups;
+}
+var dup = duplicateArray([1,2,3,4,5], 1);
+	```
 * Describe a strategy for memoization (avoiding calculation repetition) in JavaScript. 
 * Why is it called a Ternary statement, what does the word "Ternary" indicate? 
 * What is the arity of a function?  
