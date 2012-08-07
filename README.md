@@ -217,16 +217,21 @@ function Person(){} var person = Person() var person = new Person()
 [1,2,3,4,5].duplicator(); // [1,2,3,4,5,1,2,3,4,5]
 ```
 	* *Ok, but this is going to extend the built in JS Array Object, which we already said was a bad idea.*
-```Array.prototype.duplicator = function(){
+```javascript
+Array.prototype.duplicator = function(){
     return this.concat(this);
-}```
+}
+```
 	* *I'd prefer to do this:*
-```function duplicateArray(array) {
+```javascript
+function duplicateArray(array) {
 	return array.concat(array);
 }
-var dup = duplicateArray([1,2,3,4,5])```
+var dup = duplicateArray([1,2,3,4,5])
+```
 	* *Or this:*
-```function duplicateArray(array, numDups) {
+```javascript
+function duplicateArray(array, numDups) {
     var dups = [];
     for (var i=0; i<numDups+1; i++) {
         dups = dups.concat(array);
@@ -234,7 +239,8 @@ var dup = duplicateArray([1,2,3,4,5])```
     return dups;
 }
 var dup = duplicateArray([1,2,3,4,5], 1);
-	```
+```
+
 * Describe a strategy for memoization (avoiding calculation repetition) in JavaScript. 
 * Why is it called a Ternary statement, what does the word "Ternary" indicate? 
 * What is the arity of a function?  
