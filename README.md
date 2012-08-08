@@ -223,15 +223,13 @@ Array.prototype.duplicator = function() {
     return this.concat(this);
 }
 
-// I'd prefer to do this:*
-
+// I'd prefer to do this:
 function duplicateArray(array) {
 	return array.concat(array);
 }
 var dup = duplicateArray([1,2,3,4,5])
 
-// Or this:*
-
+// Or this:
 function duplicateArray(array, numDups) {
     var dups = [];
     for (var i=0; i<numDups+1; i++) {
@@ -243,8 +241,13 @@ var dup = duplicateArray([1,2,3,4,5], 1);
 ```
 
 * Describe a strategy for memoization (avoiding calculation repetition) in JavaScript. 
+	* *The standard way to do it is to create a memoization function that creates a cache object for calculations. You then pass calculations into the function, which checks if it already exists in the cache. If it does, it returns the result without having to actually perform the calculation. If the calculation doesn't exist in the cache, it performs and returns the calculation, then also stores it in the cache object for next time.*
+
 * Why is it called a Ternary statement, what does the word "Ternary" indicate? 
+	* *Ternary indicates an inline if statement, comprised of 3 parts. The first is a boolean expression. The second is an expression that is returned if the boolean is true. The third is an expression returned if the boolean is false. “In computer science, a ternary operator is an operator that takes three arguments.” - http://en.wikipedia.org/wiki/Ternary_operation*
+
 * What is the arity of a function?  
+	* *The number of arguments expected by a function. Source:https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/arity*
 
 ## JS-Code Examples:
 
