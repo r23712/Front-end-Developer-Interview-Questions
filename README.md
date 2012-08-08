@@ -232,12 +232,12 @@ var dup = duplicateArray([1,2,3,4,5])
 // Or this:
 function duplicateArray(array, numDups) {
     var dups = [];
-    for (var i=0; i<numDups+1; i++) {
-        dups = dups.concat(array);
+    while (dups.length/array.length < numDups) {
+       dups = dups.concat(array);
     }
     return dups;
 }
-var dup = duplicateArray([1,2,3,4,5], 1);
+var dup = duplicateArray([1,2,3,4,5], 2);
 ```
 
 * Describe a strategy for memoization (avoiding calculation repetition) in JavaScript. 
