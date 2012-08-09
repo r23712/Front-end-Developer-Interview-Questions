@@ -232,12 +232,12 @@ var dup = duplicateArray([1,2,3,4,5])
 // Or this:
 function duplicateArray(array, numDups) {
     var dups = [];
-    while (dups.length/array.length < numDups) {
-       dups = dups.concat(array);
+    for (var i=0; i<numDups+1; i++) {
+        dups = dups.concat(array);
     }
     return dups;
 }
-var dup = duplicateArray([1,2,3,4,5], 2);
+var dup = duplicateArray([1,2,3,4,5], 1);
 ```
 
 * Describe a strategy for memoization (avoiding calculation repetition) in JavaScript. 
@@ -295,20 +295,38 @@ Question: What is the value of foo.length?
 ## jQuery-Specific Questions:
 
 * Explain "chaining". 
+	* *jQuery methods return an object, therefore making it possible to run sequential methods on the same jQuery object. This results in shorter, cleaner code that runs faster because it reduces interaction with the DOM.*
+
 * Explain "deferreds".
+	* *A jQuery Deferred Object is used to manage callbacks based on success and failure of other functions. It is primarily used for handling ajax requests that require flexible or complex state management. Multiple callbacks can be attached to a single deferred object in a chain, with methods like `deferred.then()` `deferred.done()` and `deferred.fail()`. Callbacks can even be bound after the event dispatch has occured.*
+
 * What are some jQuery specific optimizations you can implement?
+	* *Use chaining as much as possible. Optimize selectors (for example using `.find()` rather than context). Cache selectors that get run more than once. Use `.on()` assigned to a parent element, rather than binding lots of event listeners to child elements. Reduce the amount of DOM manipulation (for example, if you are building a list, instead of using multiple `.append()` calls to a `<ul>` element, instead build all the `<li>` elements as a string and use `.append()` just once).*
+
 * What does `.end()` do? 
+	* *You use `.end()` when chaining methods to revert back to a previous selected group of elements. For example, if you do a `.find()` and then `.end()`, it reverts the selector back to its state before the `.find()` was executed. It enables you to do less DOM lookups.*
+
 * How, and why, would you namespace a bound event handler? 
+	* *You would namespace an event handler if you want to refer to a specific event handler for triggering or removal (for example, you could have multiple click event handlers bound to an element, but only want to remove one of them).*
+
 * Name 4 different values you can pass to the jQuery method.
 	* Selector (string), HTML (string), Callback (function), HTMLElement, object, array, element array, jQuery Object etc.
+
 * What is the effects (or fx) queue? 
-* What is the difference between `.get()`, `[]`, and `.eq()`? 
+	* *It is jQuery’s library for animation.*
+
+* What is the difference between `.get()` and `.eq()`? 
+	* *`eq()` returns a jQuery object and `get()` returns a DOM element.*
+
 * What is the difference between `.bind()`, `.live()`, and `.delegate()`? 
+	* *`.bind()` was the original method for attaching event listeners in jQuery, and is very straightforward way of putting an event listener onto an element. `.live()` is an improvement over `.bind()` in that it gets attached only once to a given selector, as opposed to `.bind()` which binds individual event listeners to each matched element. `.delegate()` is even better because you can attach the listener to a root element that will catch events that bubble up from the designated element delegates (resulting in better performance). It also works great for dynamic elements that get added to the page after the original event handler was attached.*
+
 * What is the difference between `$` and `$.fn`? Or just what is `$.fn`.
 * Optimize this selector: 
 ```javascript
 $(".foo div#bar:eq(0)")
 ```
+	* *`$('#bar')`*
 
 ## CSS-Specific Questions:
 
