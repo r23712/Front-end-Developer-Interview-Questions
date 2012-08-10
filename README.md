@@ -331,11 +331,22 @@ $(".foo div#bar:eq(0)")
 ## CSS-Specific Questions:
 
 * Describe what a "reset" CSS file does and how it's useful. 
+	* *A CSS reset is used to create a baseline set of styles that will display the same across browsers.*
+
 * Describe Floats and how they work. 
+	* *Elements can be floated left or right, elements after the float will then wrap around it (unless the clear property is applied to the element).*
+
 * What are the various clearing techniques and which is appropriate for what context? 
+	* *You could float a series of elements to achieve a gallery, then use clear both to force line breaks. You could make a flexible 2 or 3-column layout, then clear both on the footer. You would use clearfix technique to force a container’s height to adjust to fit floated elements.*
+
 * Explain CSS sprites, and how you would implement them on a page or site. 
+	* *First, create a spritesheet that contains all the commonly used graphic elements on your website. Then to use the sprites, use the spritesheet as a background image on a `<div>` set to the size of the sprite, then use `background-position` to display the appropriate sprite. A newer technique would be to use icon fonts, which have the added advantage of being vector-based and therefore look nicer on higher resolution (retina) screens.*
+
 * What are your favourite image replacement techniques and which do you use when? 
+	* *Webfonts have replaced many of the use cases for image replacement. However, it still is necessary from time to time, especially for something like a company logo. Once again, I go with the HTML5 Boilerplate method.*
+
 * CSS property hacks, conditionally included .css files, or... something else? 
+	* *I use HTML5 Boilerplate’s technique of conditional classes on `<html>`*
 * How do you serve your pages for feature-constrained browsers? 
 	* What techniques/processes do you use?  
 * What are the different ways to visually hide content (and make it available only for screen readers)? 
