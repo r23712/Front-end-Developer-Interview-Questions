@@ -15,10 +15,10 @@
 
 * Are you on GitHub? 
 	* If so, what are some examples of repos you follow 
- 		* *HTML5 Boilerplate*
+ 		* *[HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), [Modernizr](https://github.com/Modernizr/Modernizr/), [Video.js](https://github.com/zencoder/video-js) and lots more.*
 
 * What blogs do you follow? 
-	* *Lots. HTML5Weekly, JavaScript Weekly, CSS Tricks/Shoptalk, Javascript Jabber, The Web Ahead*
+	* *Lots (and also podcasts) including [HTML5Weekly](http://html5weekly.com), [JavaScript Weekly](http://javascriptweekly.com)/[JavaScript Show](http://javascriptshow.com/), [CSS Tricks](http://css-tricks.com/)/[Shoptalk](http://shoptalkshow.com/), [http://javascriptjabber.com/](http://javascriptjabber.com/), [The Web Ahead](http://5by5.tv/webahead/)*
 
 * What version control systems have you used (Git, SVN etc.)? 
 	* *Git and SVN*
@@ -27,12 +27,12 @@
 	* *Mac, Sublime 2, Chrome Dev Tools, Firebug, Photoshop, Lots of online resources*
 
 * Can you describe your workflow when you create a web page? 
-	* *Usually start with my HTML5 Boilerplate fork, then markup, then styling, then JavaScript. I try to tackle the most challenging stuff first.*
+	* *Usually start with my [HTML5 Boilerplate fork](https://github.com/johnpolacek/html5project), then markup, then styling, then JavaScript. I try to tackle the most challenging stuff first.*
 
 * Can you describe the difference between progressive enhancement and graceful degradation?
 	* *Progressive enhancement is starting from a baseline and then building enhancements for new browser tech on top.*
 	* *Graceful degradation is starting with designing the most optimal browser experience, then designing fallbacks for older browsers.*
-	* *Some methods for doing this are media queries, javascript polyfills and javascript detection libraries such as Modernizr*
+	* *Some methods for doing this are media queries, javascript polyfills and javascript detection libraries like Modernizr*
 
 * Explain what "Semantic HTML" means. 
 	* *It means the opposite of using divs for everything. Taking advantage of new HTML5 elements like nav, article, header, footer, etc.*
@@ -44,14 +44,14 @@
 	* *Use photoshop to compress image files, choosing the best format for the best compression, then use ysmush.it to get even more lossless compression.*
 	* *Concatenate and minify JavaScript and CSS Files*
 	* *Use sprite sheets and icon fonts*
-	* *Use cdn for jquery and hosting video*		
+	* *Use a cdn for jquery and hosting video*		
 	* *Cache static files (in the past this would be typically done with a php header, but now you could use a HTML5 Cache Manifest)*
 
 * Why is it better to serve site assets from multiple domains? 
-	* *Parallel downloads speed up the page load. Also, serving static files from a CDN (S3 for example) takes some load off your server.*
+	* *Parallel downloads speed up the page load. Also, serving static files from a CDN ([S3](http://aws.amazon.com/s3/) for example) takes some load off your server.*
 
 * How many resources will a browser download from a given domain at a time?  
-	* *Depends on the browser. The recommendation is to stick to 2-4 hostnames (http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/)*
+	* *Depends on the browser. The recommendation is to stick to 2-4 hostnames <small>[(source)](http://www.yuiblog.com/blog/2007/04/11/performance-research-part-4/)</small>*
 
 * Name 3 ways to decrease page load. (perceived or actual load time) 
 	* *The best way is usually to reduce your image sizes. Minify and concatenate JS/CSS. Have JS at the bottom of the page. Use a CDN.*
@@ -60,17 +60,17 @@
 	* *Conform to the conventions (stay consistant)*
 
 * Write a simple slideshow page 
-	* Already did. (http://johnpolacek.github.com/scrolldeck.js/)
+	* [Already did](http://johnpolacek.github.com/scrolldeck.js/)
 
 * What tools do you use to test your code's performance?
-	* *Yahoo! YSlow (http://developer.yahoo.com/yslow/)*
- 	* *Google PageSpeed (https://developers.google.com/speed/pagespeed/)*
-  	* *Pingdom Tools (http://tools.pingdom.com/fpt/)*
-   	* JSPerf (http://jsperf.com/)
-	* Dromaeo (http://dromaeo.com/) 
+	* *[Yahoo! YSlow](http://developer.yahoo.com/yslow/)*
+ 	* *[Google PageSpeed](https://developers.google.com/speed/pagespeed/)*
+  	* *[Pingdom Tools](http://tools.pingdom.com/fpt/)*
+   	* [JSPerf](http://jsperf.com/)
+	* [Dromaeo](http://dromaeo.com/) 
 
 * If you could master one technology this year, what would it be? 
-	* *I put more importance on building cool things over any specific type of tech. People seem to be doing great stuff with Node.js + Arduino lately*
+	* *I put more importance on building cool things over any specific type of tech. People seem to be doing [neat stuff](http://www.instructables.com/id/Arduino-LCD-Twitter-display/) with [Node.js](http://nodejs.org/) + [Arduino](http://www.arduino.cc) lately*
 
 * Explain the importance of standards and standards bodies.  
 	* *Standards are the only thing holding this crazy chaotic thing we call the web together. They make it possible for us to code up web stuff that works cross-browser/platform/device/screen*
@@ -85,7 +85,7 @@
 
 * What are the limitations when serving XHTML pages? 
 	* Are there any problems with serving pages as `application/xhtml+xml`?  
-	* *Yes. Here's a nice article on this stuff (http://www.webdevout.net/articles/beware-of-xhtml/) These questions are giving me a headache. Let's just do html5.*
+	* *Yes. [Here's a nice article](http://www.webdevout.net/articles/beware-of-xhtml/) on this stuff. These questions are giving me a headache. Let's just do html5.*
 
 * How do you serve a page with content in multiple languages? 
 	* *You would generally use a CMS for this, which would be wired up with different content for each language, but still output the same structure and styling.*
@@ -94,7 +94,7 @@
 	* *Spacing is a biggie. You want to make sure you have a fluid design that can accommodate different sized type. This can be particularly noticeable in navigation buttons that might overlap content or break in the middle of a word.*
 
 * Can you use XHTML syntax in HTML5? 
-	* *Yes. (http://adactio.com/journal/1595/)*
+	* *[Yes](http://adactio.com/journal/1595/)*
 
 * How do you use XML in HTML5? 
 	* *I like the idea of HTML as a flavor of XML (XHTML) - i.e. quoted attr's and trailing slashes on br's, img's, etc.*
@@ -150,22 +150,22 @@ function Person(){} var person = Person() var person = new Person()
 	* *The first is undefined. The second is an object.*
 
 * What's the difference between `.call` and `.apply`? 
-	* *apply and call do the same thing, but apply() uses an array containing arguments for the target method as the second parameter.*
+	* *`.apply` and `.call` do the same thing, but `.apply` uses an array containing arguments for the target method as the second parameter.*
 
 * explain `Function.prototype.bind`? 
-	* *Use this to create functions that when called have a particular value for _this_ and therefore binding it to the original value of the target object*
+	* *Use this to create functions that when called have a particular value for `this` and therefore binding it to the original value of the target object*
 
 * When do you optimize your code? 
 	* *All the time, from the beginning structure, to refactoring along the way, to re-evaluating at the end.*
 
 * Can you explain how inheritance works in JavaScript?   
-	* *JavaScript does not have classes - it uses prototypal inheritance. There continues to be debate over what specific inheritance pattern works best (http://stackoverflow.com/questions/6418674/improvement-over-john-resigs-javascript-class-framework). I like John Resig’s approach - http://ejohn.org/blog/simple-javascript-inheritance/ - as implemented in $.Class by JavaScriptMVC - http://javascriptmvc.com/docs.html#!jQuery.Class - simply because it just makes the most sense to me.*
+	* *JavaScript does not have classes - it uses prototypal inheritance. There continues to be [debate](http://stackoverflow.com/questions/6418674/improvement-over-john-resigs-javascript-class-framework) over what specific inheritance pattern works best. I like [John Resig’s approach](http://ejohn.org/blog/simple-javascript-inheritance/) as implemented in [$.Class by JavaScriptMVC](http://javascriptmvc.com/docs.html#!jQuery.Class) simply because it just makes the most sense to me.*
 
 * When would you use `document.write()`?
 	* *It is bad practice to use `document.write()`. Instead, use DOM manipulation methods like `innerHTML`. The one case where it is acceptable from what I understand is where you would want to add link to a stylesheet if JavaScript is enabled.*
 
 * What's the difference between feature detection, feature inference, and using the UA string 
-	* *Using feature detection over user agent detection is favored because devices and device features are constantly changing and therefore it is better to design behavior based on whether particular features are present or not. For example, by using Modernizr or yepnope.*
+	* *Using feature detection over user agent detection is favored because devices and device features are constantly changing and therefore it is better to design behavior based on whether particular features are present or not. For example, by using [Modernizr](http://modernizr.com/) or [yepnope](http://yepnopejs.com).*
 
 * Explain AJAX
 	* *AJAX is used for asynchonously sending and receiving data without interfering with any processes occuring on the page. It is used for things like form submission, loading dynamic content assets and user interaction like chat rooms and multiplayer games. When data is returned from a server, a callback function is then executed that handles the data. AJAX stands for Asynchronous JavaScript and XML, which has become a bit outdated as most are using JSON these days. But, AJAJ just doesn’t have as nice a ring to it though.*
@@ -174,7 +174,7 @@ function Person(){} var person = Person() var person = new Person()
 	* *JSONP stands for JSON with padding. The padding is a callback function that is used to wrap the data returned from the server. The reason for its existence is to get around browser's same-origin restriction against cross domain requests.*
 
 * Have you ever used JavaScript templating? If so, what libraries have you used? (Mustache.js, Handlebars etc.)
-	* *I've used jQuery Templates and more recently Mustache. Recently though, my favorite has been to use ICanHaz.js with Mustache. http://icanhazjs.com*
+	* *I've used jQuery Templates and more recently Mustache. Recently though, my favorite has been to use [ICanHaz.js](http://icanhazjs.com) with Mustache. *
 
 * Explain "hoisting".
 	* *Hoisting is a feature in JavaScript where var declarations are moved to the top of the function body. However, the initialization/assignment of the var is not. Therefore it is considered best practice to define and assign all var declarations at the top of a function.*
@@ -201,10 +201,10 @@ function Person(){} var person = Person() var person = new Person()
 	* *`===` is strictly equal, while `==` allows for truthiness, where the objects being compared are equal after type coercion. For example, `1=="1"` is true, but `1==="1"` is false.*
 
 * Explain how you would get a query string parameter from the browser window's URL. 
-	* *I would look up how to do it on stackoverflow. http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript*
+	* *I would look up how to do it on [stackoverflow](http://stackoverflow.com/questions/901115/get-query-string-values-in-javascript).*
 
 * Explain the same-origin policy with regards to JavaScript. 
-	* *A script can read only the properties of windows and documents that are loaded from the same host, through the same port, and by the same protocol as the script itself. (source: O'Reilly JavaScript: The Definitive Guide)*
+	* *A script can read only the properties of windows and documents that are loaded from the same host, through the same port, and by the same protocol as the script itself. <small>([source])(http://docstore.mik.ua/orelly/webprog/jscript/ch21_03.htm)</small>*
 
 * Explain event delegation. 
 	* *Event delegation is assigning event handlers further up the DOM tree to capture events as they bubble up from children. For example, adding a click event listener to a `<ul>` to capture any clicks upon its child `<li>` elements.*
@@ -247,7 +247,7 @@ var dup = duplicateArray([1,2,3,4,5], 1);
 	* *Ternary indicates an inline if statement, comprised of 3 parts. The first is a boolean expression. The second is an expression that is returned if the boolean is true. The third is an expression returned if the boolean is false. “In computer science, a ternary operator is an operator that takes three arguments.” - http://en.wikipedia.org/wiki/Ternary_operation*
 
 * What is the arity of a function?  
-	* *The number of arguments expected by a function. Source:https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/arity*
+	* *The number of arguments expected by a function. <small>([source])(https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/arity)</small>*
 
 ## JS-Code Examples:
 
@@ -340,53 +340,53 @@ $(".foo div#bar:eq(0)")
 	* *You could float a series of elements to achieve a gallery, then use clear both to force line breaks. You could make a flexible 2 or 3-column layout, then clear both on the footer. You would use clearfix technique to force a container’s height to adjust to fit floated elements.*
 
 * Explain CSS sprites, and how you would implement them on a page or site. 
-	* *First, create a spritesheet that contains all the commonly used graphic elements on your website. Then to use the sprites, use the spritesheet as a background image on a `<div>` set to the size of the sprite, then use `background-position` to display the appropriate sprite. A newer technique would be to use icon fonts, which have the added advantage of being vector-based and therefore look nicer on higher resolution (retina) screens. Some nice icon fonts are http://fortawesome.github.com/Font-Awesome/ and http://www.zurb.com/playground/foundation-icons*
+	* *First, create a spritesheet that contains all the commonly used graphic elements on your website. Then to use the sprites, use the spritesheet as a background image on a `<div>` set to the size of the sprite, then use `background-position` to display the appropriate sprite. A newer technique would be to use icon fonts, which have the added advantage of being vector-based and therefore look nicer on higher resolution (retina) screens. Some nice icon fonts are [Font Awesome](http://fortawesome.github.com/Font-Awesome/) and [Foundation Icons](http://www.zurb.com/playground/foundation-icons)*
 
 * What are your favourite image replacement techniques and which do you use when? 
-	* *Webfonts have replaced many of the use cases for image replacement. However, it still is necessary from time to time, especially for something like a company logo. I like the HTML5 Boilerplate approach ofsetting the font size to zero rather than use text-indent.*
+	* *Webfonts have replaced many of the use cases for image replacement. However, it still is necessary from time to time, especially for something like a company logo. I like the [HTML5 Boilerplate(H5BP)](http://html5boilerplate.com) approach of setting the font size to zero rather than use text-indent.*
 
 * CSS property hacks, conditionally included .css files, or... something else? 
-	* *Once again, I go with HTML5 Boilerplate and their technique of conditional classes on `<html>`*
+	* *Once again, I go with [H5BP](http://html5boilerplate.com) and their technique of conditional classes on `<html>`*
 
 * How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?  
-	* *First, its important to take a look at any analytics you can to see what browsers and devices your users are using. Next of course, it depends on the content. I've used various approaches (graceful degradation, progressive enhancement, mobile first). I like the responsive web design approach of primarily using media queries. Also doing feature detection (usually with Modernizr) combined with polyfills.*
+	* *First, its important to take a look at any analytics you can to see what browsers and devices your users are using. Next of course, it depends on the content. I've used various approaches (graceful degradation, progressive enhancement, mobile first). I like the responsive web design approach of primarily using media queries. Also doing feature detection (usually with [Modernizr](http://modernizr.com/)) combined with polyfills.*
 
 * What are the different ways to visually hide content (and make it available only for screen readers)? 
 	* *Some people have used `text-indent` or absolute positioning to move the content off the page, but the favorable approach is to use `clip: rect(1px, 1px, 1px, 1px);` along with some other properties. Again, HTML5 Boilerplate is helpful here, as they have a nice `.visually-hidden` class for just this purpose.*
 
 * Have you ever used a grid system, and if so, what do you prefer? 
-	* *I used to use 960.gs http://960.gs (I think like everyone else). With fluid grids being all the rage these days (deservedly so) I've messed around with a few like Golden Grid System http://goldengridsystem.com and Skeleton http://www.getskeleton.com - Most of the time, I think I've been using Twitter Bootstrap or rolling my own.*
+	* *I used to use [960.gs](http://960.gs) (I think like everyone else). With fluid grids being all the rage these days (deservedly so) I've messed around with a few like [Golden Grid System](http://goldengridsystem.com) and [Skeleton](http://www.getskeleton.com) - Most of the time, I think I've been using [Twitter Bootstrap](http://twitter.github.com/bootstrap/) or rolling my own.*
 
 * Have you used or implemented media queries or mobile specific layouts/CSS? 
 	* *Only like all the time.*
 
 * Any familiarity with styling SVG? 
-	* *I have not, but I always say the key to being a good developer is to be good at Google. http://lmgtfy.com/?q=css+svg (and these days StackOverflow http://stackoverflow.com/questions/588718/jquery-svg-vs-raphael)*
+	* *I have not, but I always say the key to being a good developer is to be good at [Google](http://lmgtfy.com/?q=css+svg) (and these days [StackOverflow](http://stackoverflow.com/questions/588718/jquery-svg-vs-raphael))*
 
 * How do you optimize your webpages for print? 
-	* *I would use a standard no-frills print stylesheet. I don't think it is a good idea to spend any significant amount of time formatting for print unless there is a reason people would be likely to print the page (a restaurant menu for example)*
+	* *I would start with the H5BP print stylesheet as a base and then customize as needed.*
 
 * What are some of the "gotchas" for writing efficient CSS? 
 	* *One mistake I see commonly is using to many linked .css files. The old practice of trying to avoid 'class-itis' is outdated and no longer good practice (instead use semantic class names). The key is to not style 'pages', but rather style 'modules'. Optimize for change. Website maintainability is important.*
 
 * Do you use CSS preprocessors? (SASS, Compass, Stylus, LESS) 
-	* *I have not used them in any significant way other to try them out. If I was on a team that favored them, I would have no problem with doing so.*
+	* *I have not used them much other to try them out. If I worked with a team that used them, I would have no problem with doing so.*
 
 * How would you implement a web design comp that uses non-standard fonts? 
-	* *I would use webfonts via `@font-face`. I would be _very_ relectant to use any other technique for any significant amount of text.*
+	* *I would use webfonts via `@font-face`. I would be very relectant to use any other technique for any significant amount of text.*
 
 * Explain how a browser determines what elements match a CSS selector?  
-	* *Browsers read CSS from right to left. The less rules the browser has to evaluate, the faster the styling engine will perform.
+	* *Browsers read CSS from right to left. The less rules the browser has to evaluate, the faster the styling engine will perform.*
 
-	To resolve conflicts between rules applying to the same element, browsers follow a set of rules to determine which selector is more specific (CSS Specificity). There is a weighted point system, where element selectors are 1 point, class selectors are 10 points and ID selectors are 100 points. In the case of 2 equally weighted selectors, the last rule is the one that gets followed.*
+	* *To resolve conflicts between rules applying to the same element, browsers follow a set of rules to determine which selector is more specific (CSS Specificity). There is a weighted point system, where element selectors are 1 point, class selectors are 10 points and ID selectors are 100 points. In the case of 2 equally weighted selectors, the last rule is the one that gets followed.*
 
 ## Optional fun Questions:
 
 * What's the coolest thing you've ever coded, what are you most proud of?
-	* *Even though its a bit silly, my Scrollorama and Superscrollorama plugins have gotten a lot of positive response and thats made me proud.*
+	* *Even though its a bit silly, my [Scrollorama](http://johnpolacek.github.com/scrollorama/) and [Superscrollorama](http://johnpolacek.github.com/superscrollorama/) plugins have gotten a lot of positive response and thats made me proud.*
 
 * Do you know the HTML5 gang sign? 
-	* *Yes http://html5homi.es*
+	* *[Yes](http://html5homi.es)*
 
 * Are you now, or have you ever been, on a boat. 
 	* *I have ridden on boats of many sizes.*
@@ -395,7 +395,7 @@ $(".foo div#bar:eq(0)")
 	* *Running JS in the console is purty dern cuhl.*
 
 * Do you have any pet projects? What kind? 
-	* *Yes, yes, yes.*
+	* *[Yes](http://areyouabrogrammer.com), [yes](http://johnpolacek.com/matchtheletter/) [yes](http://johnpolacek.github.com/scrolldeck.js/decks/responsive/).*
 
 * Explain the significance of "cornify". 
 	* *Bringing unicorns and rainbows to the dull corners of the web.*
@@ -404,7 +404,7 @@ $(".foo div#bar:eq(0)")
 	* Wait and see if they turn the paper upside down
 
 * Pirate or Ninja? 
-	* *I think of myself more as Winston Wolf http://www.youtube.com/watch?v=ANPsHKpti48*
+	* *I think of myself more as [Winston Wolf](http://www.youtube.com/watch?v=ANPsHKpti48)*
 
 * If not Web Development, what would you be doing? 
 	* *I used to draw stuff, so maybe that.*
