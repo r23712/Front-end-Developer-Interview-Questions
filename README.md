@@ -340,26 +340,45 @@ $(".foo div#bar:eq(0)")
 	* *You could float a series of elements to achieve a gallery, then use clear both to force line breaks. You could make a flexible 2 or 3-column layout, then clear both on the footer. You would use clearfix technique to force a container’s height to adjust to fit floated elements.*
 
 * Explain CSS sprites, and how you would implement them on a page or site. 
-	* *First, create a spritesheet that contains all the commonly used graphic elements on your website. Then to use the sprites, use the spritesheet as a background image on a `<div>` set to the size of the sprite, then use `background-position` to display the appropriate sprite. A newer technique would be to use icon fonts, which have the added advantage of being vector-based and therefore look nicer on higher resolution (retina) screens.*
+	* *First, create a spritesheet that contains all the commonly used graphic elements on your website. Then to use the sprites, use the spritesheet as a background image on a `<div>` set to the size of the sprite, then use `background-position` to display the appropriate sprite. A newer technique would be to use icon fonts, which have the added advantage of being vector-based and therefore look nicer on higher resolution (retina) screens. Some nice icon fonts are http://fortawesome.github.com/Font-Awesome/ and http://www.zurb.com/playground/foundation-icons*
 
 * What are your favourite image replacement techniques and which do you use when? 
-	* *Webfonts have replaced many of the use cases for image replacement. However, it still is necessary from time to time, especially for something like a company logo. Once again, I go with the HTML5 Boilerplate method.*
+	* *Webfonts have replaced many of the use cases for image replacement. However, it still is necessary from time to time, especially for something like a company logo. I like the HTML5 Boilerplate approach ofsetting the font size to zero rather than use text-indent.*
 
 * CSS property hacks, conditionally included .css files, or... something else? 
-	* *I use HTML5 Boilerplate’s technique of conditional classes on `<html>`*
-* How do you serve your pages for feature-constrained browsers? 
-	* What techniques/processes do you use?  
+	* *Once again, I go with HTML5 Boilerplate and their technique of conditional classes on `<html>`*
+
+* How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?  
+	* *First, its important to take a look at any analytics you can to see what browsers and devices your users are using. Next of course, it depends on the content. I've used various approaches (graceful degradation, progressive enhancement, mobile first). I like the responsive web design approach of primarily using media queries. Also doing feature detection (usually with Modernizr) combined with polyfills.*
+
 * What are the different ways to visually hide content (and make it available only for screen readers)? 
+	* *Some people have used `text-indent` or absolute positioning to move the content off the page, but the favorable approach is to use `clip: rect(1px, 1px, 1px, 1px);` along with some other properties. Again, HTML5 Boilerplate is helpful here, as they have a nice `.visually-hidden` class for just this purpose.*
+
 * Have you ever used a grid system, and if so, what do you prefer? 
+	* *I used to use 960.gs http://960.gs (I think like everyone else). With fluid grids being all the rage these days (deservedly so) I've messed around with a few like Golden Grid System http://goldengridsystem.com and Skeleton http://www.getskeleton.com - Most of the time, I think I've been using Twitter Bootstrap or rolling my own.*
+
 * Have you used or implemented media queries or mobile specific layouts/CSS? 
+	* *Only like all the time.*
+
 * Any familiarity with styling SVG? 
+	* *I have not, but I always say the key to being a good developer is to be good at Google. http://lmgtfy.com/?q=css+svg (and these days StackOverflow http://stackoverflow.com/questions/588718/jquery-svg-vs-raphael)*
+
 * How do you optimize your webpages for print? 
+	* *I would use a standard no-frills print stylesheet. I don't think it is a good idea to spend any significant amount of time formatting for print unless there is a reason people would be likely to print the page (a restaurant menu for example)*
+
 * What are some of the "gotchas" for writing efficient CSS? 
+	* *One mistake I see commonly is using to many linked .css files. The old practice of trying to avoid 'class-itis' is outdated and no longer good practice (instead use semantic class names). The key is to not style 'pages', but rather style 'modules'. Optimize for change. Website maintainability is important.*
+
 * Do you use CSS preprocessors? (SASS, Compass, Stylus, LESS) 
-	* If so, describe what you like and dislike about the CSS preprocessors you have used. 
+	* *I have not used them in any significant way other to try them out. If I was on a team that favored them, I would have no problem with doing so.*
+
 * How would you implement a web design comp that uses non-standard fonts? 
-	* Webfonts (font services like: Google Webfonts, Typekit etc.)
+	* *I would use webfonts via `@font-face`. I would be _very_ relectant to use any other technique for any significant amount of text.*
+
 * Explain how a browser determines what elements match a CSS selector?  
+	* *Browsers read CSS from right to left. The less rules the browser has to evaluate, the faster the styling engine will perform.
+
+	To resolve conflicts between rules applying to the same element, browsers follow a set of rules to determine which selector is more specific (CSS Specificity). There is a weighted point system, where element selectors are 1 point, class selectors are 10 points and ID selectors are 100 points. In the case of 2 equally weighted selectors, the last rule is the one that gets followed.*
 
 ## Optional fun Questions:
 
