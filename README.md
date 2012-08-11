@@ -383,18 +383,40 @@ $(".foo div#bar:eq(0)")
 ## Optional fun Questions:
 
 * What's the coolest thing you've ever coded, what are you most proud of?
+	* *Even though its a bit silly, my Scrollorama and Superscrollorama plugins have gotten a lot of positive response and thats made me proud.*
+
 * Do you know the HTML5 gang sign? 
+	* *Yes http://html5homi.es*
+
 * Are you now, or have you ever been, on a boat. 
+	* *I have ridden on boats of many sizes.*
+
 * What are your favorite parts about the developer tools you use?
+	* *Running JS in the console is purty dern cuhl.*
+
 * Do you have any pet projects? What kind? 
+	* *Yes, yes, yes.*
+
 * Explain the significance of "cornify". 
+	* *Bringing unicorns and rainbows to the dull corners of the web.*
+
 * On a piece of paper, write down the letters A B C D E vertically. Now put these in descending order without writing one line of code. 
 	* Wait and see if they turn the paper upside down
+
 * Pirate or Ninja? 
-	* Bonus if it's a combo and a good reason was given (+2 for zombie monkey pirate ninjas) 
+	* *I think of myself more as Winston Wolf http://www.youtube.com/watch?v=ANPsHKpti48*
+
 * If not Web Development, what would you be doing? 
+	* *I used to draw stuff, so maybe that.*
+
 * Where in the world is Carmen Sandiego?
-	* Hint: their answer is always wrong 
+	* *Probably hanging out with Nora the Explorer*
+
 * What's your favorite feature of Internet Explorer?
+	* *The part where everybody makes funny jokes about it*
+
 * Complete this sentence: Brendan Eich and Doug Crockford are the __________ of javascript.
+	* *Eich and Crockford*
+
 * jQuery: a great library or the greatest library? Discuss.
+	* *Greatestest*
