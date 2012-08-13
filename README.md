@@ -18,13 +18,13 @@
  		* *[HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), [Modernizr](https://github.com/Modernizr/Modernizr/), [Video.js](https://github.com/zencoder/video-js) and lots more.*
 
 * What blogs do you follow? 
-	* *Lots (and also podcasts) including [HTML5Weekly](http://html5weekly.com), [JavaScript Weekly](http://javascriptweekly.com)/[JavaScript Show](http://javascriptshow.com/), [CSS Tricks](http://css-tricks.com/)/[Shoptalk](http://shoptalkshow.com/), [http://javascriptjabber.com/](http://javascriptjabber.com/), [The Web Ahead](http://5by5.tv/webahead/)*
+	* *Lots (and also podcasts) including [HTML5Weekly](http://html5weekly.com), [JavaScript Weekly](http://javascriptweekly.com) / [JavaScript Show](http://javascriptshow.com/), [CSS Tricks](http://css-tricks.com/) / [Shoptalk](http://shoptalkshow.com/), [JavaScript Jabber](http://javascriptjabber.com/), [The Web Ahead](http://5by5.tv/webahead/) And I try to devour as much of what is on [Hacker News](http://news.ycombinator.com/) as possible.*
 
 * What version control systems have you used (Git, SVN etc.)? 
 	* *Git and SVN*
 
 * What is your preferred development environment? (OS, Editor, Browsers, Tools etc.) 
-	* *Mac, Sublime 2, Chrome Dev Tools, Firebug, Photoshop, Lots of online resources*
+	* *Mac, Sublime 2, Chrome Dev Tools, Firebug, Photoshop, lots of online resources*
 
 * Can you describe your workflow when you create a web page? 
 	* *Usually start with my [HTML5 Boilerplate fork](https://github.com/johnpolacek/html5project), then markup, then styling, then JavaScript. I try to tackle the most challenging stuff first.*
