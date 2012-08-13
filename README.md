@@ -398,7 +398,7 @@ $(".foo div#bar:eq(0)")
 	* *[Yes](http://areyouabrogrammer.com), [yes](http://johnpolacek.com/matchtheletter/) [yes](http://johnpolacek.github.com/scrolldeck.js/decks/responsive/).*
 
 * Explain the significance of "cornify". 
-	* *Bringing unicorns and rainbows to the dull corners of the web.*
+	* *Bringing [rainbow happiness](http://www.cornify.com) to the dull corners of the web.*
 
 * On a piece of paper, write down the letters A B C D E vertically. Now put these in descending order without writing one line of code. 
 	* Wait and see if they turn the paper upside down
