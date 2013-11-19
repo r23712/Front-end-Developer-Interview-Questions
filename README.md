@@ -75,6 +75,9 @@
 * Explain the importance of standards and standards bodies.  
 	* *Standards are the only thing holding this crazy chaotic thing we call the web together. They make it possible for us to code up web stuff that works cross-browser/platform/device/screen*
 
+* What is FOUC? How do you avoid FOUC?
+	* Some pages that uses CSS @import rule experience a curious display quirk in the Windows version of MS Internet Explorer: a momentary flash of unstyled page content.  We could avoid it by establishing the Link element to the basic HEAD element is probrably the most natural solution, why, because first of all every page can benefit from the addition of either an alternate stylesheet or a media-dependent stylesheet.
+
 ## HTML-Specific Questions:
 
 * What's a `doctype` do, and how many can you name? 
@@ -112,6 +115,37 @@
 	* *Cookies are for storing small amounts of website data, such as a user name. HTML5 Web Storage is a faster, improved means of storing website data. sessionsStorage is for temporary data, and localStorage is for persistant data.*
 
 ## JS-Specific Questions
+
+* Explain how 'this' works in JavaScript
+	* 'this' in javascript is the current object, for example this is how you access your object in Javascript. For example:
+	
+	  ```
+	  function HotDog() {
+	    this.condiments = 'mustard, ketchup';
+	    this.getCondiments = function() {
+	      return this.condiments;
+	    }
+	  }
+	  ```
+
+* Explain how prototypal inheritance works
+	* Every object in JavaScript has a prototype that is shared between all objects of the same type. Properties can be added to the prototype or an individual object.  Although not a great comparison you could say in this respect the prototype acts like a class in more "classical" object oriented programming.
+
+* How do you go about testing your JavaScript?
+	* 
+
+* AMD vs. CommonJS?
+	* CommonJS
+	    * Is a server first approach
+	    * Assumes Sync
+	    * Clean slate, no global baggage
+	    * forward looking
+	* AMD
+	    * Is a browser first approach
+	    * prefers async
+	    * non module resources (no File I/O)
+	    * simplifies backward-compatibility 
+
 
 * Which JavaScript libraries have you used? 
 	* *jQuery of course. Other ones I've used are jQuery UI, jQuery Mobile, Modernizr, Greensock and then lots of little utility ones*
@@ -248,6 +282,9 @@ var dup = duplicateArray([1,2,3,4,5], 1);
 
 * What is the arity of a function?  
 	* *The number of arguments expected by a function. <small>([source])(https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/arity)</small>*
+
+* What is "use strict";? what are the advantages and disadvantages to using it?
+	* Well strick mode improves Javascript code by enforcing better programming pratices and eliminating some of the languages insecure and ill-advised features.
 
 ## JS-Code Examples:
 
